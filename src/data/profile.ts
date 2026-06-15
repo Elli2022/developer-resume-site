@@ -38,6 +38,8 @@ export const profile = {
     "TypeScript",
     "Tailwind CSS",
     "Node.js",
+    "Laravel",
+    "PHP",
     "WordPress",
     "GraphQL",
     "Netlify",
