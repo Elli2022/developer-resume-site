@@ -24,6 +24,14 @@ Professional developer resume for **Eleonora Nocentini Sköldebrink** — a care
 
 ![Full resume page with experience and education](docs/screenshots/home-full.png)
 
+### Experience section
+
+![Professional experience timeline](docs/screenshots/experience.png)
+
+### Education section
+
+![Education and training entries](docs/screenshots/education.png)
+
 ## Features
 
 - **Professional CV layout** — sticky sidebar with photo, skills, and contact; scrollable main content for experience and education
