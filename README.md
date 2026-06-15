@@ -1,5 +1,6 @@
 # Developer Resume Site
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/beebf641-a79a-4246-8afd-8fb6e7210573/deploy-status)](https://app.netlify.com/projects/developer-resume-site/deploys)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -63,7 +64,7 @@ The site is exported as fully static HTML (`output: "export"`), so the `out/` di
 
 ## Deployment
 
-Deployed on [Netlify](https://developer-resume-site.netlify.app/) with continuous deployment: every push to `main` triggers a build (`npm run build`) and publishes the `out/` directory.
+Deployed on [Netlify](https://developer-resume-site.netlify.app/) with continuous deployment from [GitHub](https://github.com/Elli2022/developer-resume-site): every push to `main` triggers a build (`npm run build`) and publishes the `out/` directory.
 
 ## Project Structure
 
