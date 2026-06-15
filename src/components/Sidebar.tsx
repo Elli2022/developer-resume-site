@@ -25,7 +25,7 @@ export default function Sidebar() {
             />
           </div>
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            Developer Resume
+            Online CV
           </p>
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-semibold leading-tight">
             {profile.name}
@@ -74,7 +74,15 @@ export default function Sidebar() {
             {profile.phone}
           </a>
           <p className="text-[var(--sidebar-muted)]">{profile.location}</p>
-          <div className="flex flex-wrap gap-3 pt-2">
+          <a
+            href={profile.portfolio}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-[var(--accent)] px-4 py-2.5 text-xs font-semibold text-[var(--sidebar)] transition hover:bg-[var(--highlight)]"
+          >
+            Project portfolio →
+          </a>
+          <div className="flex flex-wrap gap-3 pt-3">
             <a
               href={profile.linkedIn}
               target="_blank"
@@ -90,14 +98,6 @@ export default function Sidebar() {
               className="text-xs font-medium text-[var(--accent)] transition hover:text-white"
             >
               GitHub
-            </a>
-            <a
-              href={profile.portfolio}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs font-medium text-[var(--accent)] transition hover:text-white"
-            >
-              Portfolio
             </a>
           </div>
         </div>

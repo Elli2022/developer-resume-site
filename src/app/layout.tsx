@@ -18,12 +18,13 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL("https://developer-resume-site.netlify.app"),
   title: {
-    default: "Eleonora Nocentini Sköldebrink | Developer Resume",
+    default: "Eleonora Nocentini Sköldebrink | Freelance Developer CV",
     template: "%s | Eleonora Nocentini",
   },
   description:
-    "Professional developer resume for Eleonora Nocentini Sköldebrink — frontend and full-stack experience, education, and technical skills.",
+    "Online CV for Eleonora Nocentini Sköldebrink — freelance frontend and full-stack developer. Work history, education, and skills. Project case studies at eleonora-portfolio.netlify.app.",
   keywords: [
+    "freelance developer",
     "developer resume",
     "frontend developer",
     "full stack developer",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     "TypeScript",
     "web developer",
     "CV",
-    "portfolio",
+    "Malmö",
   ],
   alternates: {
     canonical: "/",
@@ -41,10 +42,10 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "Developer Resume",
-    title: "Eleonora Nocentini Sköldebrink | Developer Resume",
+    siteName: "Eleonora Nocentini — CV",
+    title: "Eleonora Nocentini Sköldebrink | Freelance Developer CV",
     description:
-      "Professional developer resume with experience, education, and technical skills.",
+      "Online CV with work history, education, and skills. Project portfolio at eleonora-portfolio.netlify.app.",
   },
 };
 

@@ -1,10 +1,11 @@
 export const profile = {
   name: "Eleonora Nocentini Sköldebrink",
-  title: "Frontend (Full Stack) Developer",
+  title: "Freelance Frontend & Full-Stack Developer",
+  availability: "Available for freelance projects · Malmö & remote (Sweden)",
   tagline:
-    "Career-changer with a background in security and leadership, now building responsive web experiences with modern JavaScript.",
+    "I help SMBs and organisations ship clear, maintainable websites and frontends — from scoped landing pages to Next.js/React builds with sensible handover.",
   story:
-    "I worked for several years in security at the Swedish Prison and Probation Service until I took a course in cybersecurity and programming and realized that I enjoyed it and have always loved problem-solving. Therefore, I decided to make a career change.",
+    "After years in security and leadership at the Swedish Prison and Probation Service, I retrained in web development and found a natural fit in problem-solving, structure, and client-facing delivery. Today I freelance with a focus on modern JavaScript, React, and Next.js — and on communication that keeps projects predictable for non-technical stakeholders.",
   email: "eleonora.nocentini@gmail.com",
   phone: "+46 72 427 29 12",
   location: "Malmö, Sweden",
@@ -12,6 +13,7 @@ export const profile = {
   linkedIn: "https://www.linkedin.com/in/eleonora-nocentini/",
   github: "https://github.com/Elli2022",
   portfolio: "https://eleonora-portfolio.netlify.app/",
+  portfolioLabel: "Project portfolio — case studies & demos",
   skills: [
     "HTML5",
     "CSS",
@@ -30,15 +32,13 @@ export const profile = {
     "Design & UX",
   ],
   stackHighlights: [
-    "HTML5",
-    "JavaScript",
-    "CSS",
-    "TypeScript",
-    "React",
     "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
     "Node.js",
-    "MongoDB",
-    "Express",
-    "Redis",
+    "WordPress",
+    "GraphQL",
+    "Netlify",
   ],
 };

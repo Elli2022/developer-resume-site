@@ -6,9 +6,16 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-Professional developer resume for **Eleonora Nocentini Sköldebrink** — a career-changing frontend and full-stack developer with experience in modern JavaScript, React, and Next.js. This site complements my [project portfolio](https://eleonora-portfolio.netlify.app/) with a traditional CV layout covering work history, education, and technical skills.
+**Online CV** for **Eleonora Nocentini Sköldebrink** — freelance frontend and full-stack developer based in Malmö.
 
-**Live site:** [developer-resume-site.netlify.app](https://developer-resume-site.netlify.app/)
+| Site | Purpose | URL |
+| --- | --- | --- |
+| **This repo** | CV — experience, education, background | [developer-resume-site.netlify.app](https://developer-resume-site.netlify.app/) |
+| **Project portfolio** | Case studies, demos, client work, process | [eleonora-portfolio.netlify.app](https://eleonora-portfolio.netlify.app/) |
+
+Send recruiters and clients to the **portfolio** first when they need proof of delivery. Use this **CV site** when they want the full timeline — roles, training, and career change story.
+
+**Live CV:** [developer-resume-site.netlify.app](https://developer-resume-site.netlify.app/)
 
 ## Screenshots
 
@@ -98,9 +105,13 @@ src/
 
 ## Related
 
-- [Project Portfolio](https://eleonora-portfolio.netlify.app/) — client-style case studies and demos
+- **[Project portfolio](https://eleonora-portfolio.netlify.app/)** — primary site for freelance clients: 15 case studies, process, reference
 - [GitHub](https://github.com/Elli2022)
 - [LinkedIn](https://www.linkedin.com/in/eleonora-nocentini/)
+
+## Background
+
+Originally built during frontend developer training (Grit Academy, 2024) as a personal CV. Kept as a dedicated résumé site — not a second portfolio.
 
 ## License
 

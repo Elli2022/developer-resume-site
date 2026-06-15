@@ -11,6 +11,9 @@ export default function Header() {
         {profile.name}
       </h2>
       <p className="mt-3 text-lg text-[var(--muted)]">{profile.title}</p>
+      <p className="mt-2 text-sm font-medium text-[var(--accent-deep)]">
+        {profile.availability}
+      </p>
       <p className="mt-2 text-sm text-[var(--muted)]">{profile.tagline}</p>
 
       <div className="mt-6">
