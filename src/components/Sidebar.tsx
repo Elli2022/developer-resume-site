@@ -1,54 +1,107 @@
 import Image from "next/image";
+import { profile } from "@/data/profile";
+import SkillPills from "./SkillPills";
 
-const skills = [
-  "HTML5",
-  "CSS",
-  "Javascript",
-  "Typescript",
-  "ReactJS",
-  "Next.js",
-  "Node.js",
-  "GraphQL",
-  "Tailwind",
-  "PHP",
-  "MongoDB Atlas",
-  "MySQL",
-  "Agile Methods",
-  "Scrum",
-  "Design & UX",
+const navItems = [
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  { href: "#education", label: "Education" },
+  { href: "#contact", label: "Contact" },
 ];
 
-const Sidebar: React.FC = () => {
+export default function Sidebar() {
   return (
-    <aside className="w-1/4 bg-black text-white p-8">
-      <div className="mb-4">
-        <Image
-          src="/images/portfolioFoto.jpg"
-          alt="Eleonora Nocentini Sköldebrink"
-          width={200}
-          height={200}
-          className="rounded-full"
-        />
-      </div>
-      <h3 className="text-xl font-bold mb-4 text-[#bb9457]">
-        TECHNICAL SKILLS
-      </h3>
-      <ul className="list-disc space-y-2 ml-5">
-  {skills.map((skill, index) => (
-    <li key={index} className="text-gray-300">
-      {skill}
-    </li>
-  ))}
-</ul>
-      <div className="text-[#bb9457]">
-        <h3 className="text-xl font-bold mb-4">CONTACT</h3>
-          <p className="text-gray-300">0046-724272912</p>
-          <p className="text-gray-300">Lilla Varvsgatan 21 D</p>
-          <p className="text-gray-300">211 76 Malmö</p>
-          <p className="text-gray-300">eleonora.nocentini@gmail.com</p>
+    <aside className="lg:sticky lg:top-0 lg:h-screen lg:w-[320px] lg:shrink-0">
+      <div className="flex h-full flex-col bg-[var(--sidebar)] px-6 py-8 text-white lg:px-8 lg:py-10">
+        <div className="mb-6 flex flex-col items-center text-center lg:items-start lg:text-left">
+          <div className="relative mb-5 h-36 w-36 overflow-hidden rounded-full ring-4 ring-[var(--accent)]/30">
+            <Image
+              src="/images/portfolioFoto.jpg"
+              alt={profile.name}
+              fill
+              className="object-cover"
+              sizes="144px"
+              priority
+            />
+          </div>
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
+            Developer Resume
+          </p>
+          <h1 className="mt-2 font-[family-name:var(--font-display)] text-2xl font-semibold leading-tight">
+            {profile.name}
+          </h1>
+          <p className="mt-2 text-sm text-[var(--sidebar-muted)]">
+            {profile.title}
+          </p>
+        </div>
+
+        <nav className="mb-8 hidden border-t border-white/10 pt-6 lg:block">
+          <ul className="space-y-2">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className="block rounded-lg px-3 py-2 text-sm text-[var(--sidebar-muted)] transition hover:bg-white/5 hover:text-white"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <div className="mb-8">
+          <h2 className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+            Technical Skills
+          </h2>
+          <SkillPills skills={profile.skills} variant="sidebar" />
+        </div>
+
+        <div id="contact" className="mt-auto space-y-3 border-t border-white/10 pt-6 text-sm">
+          <h2 className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+            Contact
+          </h2>
+          <a
+            href={`mailto:${profile.email}`}
+            className="block text-[var(--sidebar-muted)] transition hover:text-white"
+          >
+            {profile.email}
+          </a>
+          <a
+            href={`tel:${profile.phone.replace(/\s/g, "")}`}
+            className="block text-[var(--sidebar-muted)] transition hover:text-white"
+          >
+            {profile.phone}
+          </a>
+          <p className="text-[var(--sidebar-muted)]">{profile.location}</p>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <a
+              href={profile.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-[var(--accent)] transition hover:text-white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-[var(--accent)] transition hover:text-white"
+            >
+              GitHub
+            </a>
+            <a
+              href={profile.portfolio}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-[var(--accent)] transition hover:text-white"
+            >
+              Portfolio
+            </a>
+          </div>
+        </div>
       </div>
     </aside>
   );
-};
-
-export default Sidebar;
+}

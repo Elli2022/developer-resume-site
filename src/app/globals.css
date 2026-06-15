@@ -1,31 +1,74 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
-  --foreground-rgb: 0, 0, 0; /* definierar standard textfärg */
-  --background-start-rgb: 255, 255, 255; /* vit färg för ljusläget */
-  --background-end-rgb: 255, 255, 255; /* bibehållen vit färg för gradientens slut */
+  --canvas: #f4efe6;
+  --surface: rgba(255, 251, 245, 0.9);
+  --surface-strong: #fff8f0;
+  --ink: #1a181c;
+  --muted: #5f5860;
+  --line: rgba(26, 24, 28, 0.1);
+  --accent: #b8863d;
+  --accent-deep: #154a4b;
+  --sidebar: #121015;
+  --sidebar-muted: #a8a0a8;
+  --highlight: #e2c58d;
+  --shadow: 0 24px 70px rgba(30, 22, 18, 0.1);
+  --font-body: var(--font-inter), "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: var(--font-fraunces), "Georgia", serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255; /* textfärg för mörkt läge */
-    --background-rgb: 0, 0, 0; /* bakgrundsfärg för mörkt läge */
-  }
+@theme inline {
+  --color-background: var(--canvas);
+  --color-foreground: var(--ink);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    rgb(var(--background-end-rgb))
-  ) rgb(var(--background-start-rgb)); /* uppdaterad för att använda startfärg */
+  background:
+    radial-gradient(circle at top left, rgba(184, 134, 61, 0.12), transparent 34%),
+    radial-gradient(circle at top right, rgba(21, 74, 75, 0.1), transparent 30%),
+    var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-body), sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+::selection {
+  background: rgba(184, 134, 61, 0.25);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-fade-up {
+    animation: none;
   }
 }

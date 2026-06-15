@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Developer Resume Site
+
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=nextdotjs)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61dafb?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+
+Professional developer resume for **Eleonora Nocentini Sköldebrink** — a career-changing frontend and full-stack developer with experience in modern JavaScript, React, and Next.js. This site complements my [project portfolio](https://eleonora-portfolio.netlify.app/) with a traditional CV layout covering work history, education, and technical skills.
+
+**Live site:** [developer-resume-site.netlify.app](https://developer-resume-site.netlify.app/)
+
+## Screenshots
+
+### Desktop — profile and sidebar
+
+![Resume homepage on desktop](docs/screenshots/home-desktop.png)
+
+### Mobile — responsive layout
+
+![Resume homepage on mobile](docs/screenshots/home-mobile.png)
+
+### Full page overview
+
+![Full resume page with experience and education](docs/screenshots/home-full.png)
+
+## Features
+
+- **Professional CV layout** — sticky sidebar with photo, skills, and contact; scrollable main content for experience and education
+- **12 work experiences** — from frontend internships to prior careers in security, leadership, and service
+- **9 education entries** — vocational web development training through university degrees
+- **Skill pills** — scannable tech stacks per role and program
+- **Highlighted entries** — recent developer internships and Grit Academy training stand out visually
+- **Responsive design** — optimized for desktop recruiters and mobile review
+- **Static export** — fast, hostable on any CDN with no server runtime
+
+## Tech Stack
+
+| Layer | Technology |
+| --- | --- |
+| Framework | Next.js 16 (App Router, static export) |
+| UI | React 19, TypeScript 5 |
+| Styling | Tailwind CSS 4, custom design tokens |
+| Typography | Fraunces (display) + Inter (body) via `next/font` |
+| Hosting | Netlify (continuous deployment from `main`) |
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start the dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Lint
+npm run lint
+
+# Production build (static export to ./out)
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The site is exported as fully static HTML (`output: "export"`), so the `out/` directory can be hosted on any static host.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Deployed on [Netlify](https://developer-resume-site.netlify.app/) with continuous deployment: every push to `main` triggers a build (`npm run build`) and publishes the `out/` directory.
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+  app/
+    layout.tsx          # Root layout, fonts, and SEO metadata
+    page.tsx            # Single-page resume layout
+    globals.css         # Design tokens and global styles
+  components/
+    Sidebar.tsx         # Profile photo, nav, skills, contact
+    Header.tsx          # About section and story
+    ExperienceSection.tsx
+    ExperienceItem.tsx
+    EducationSection.tsx
+    EducationItem.tsx
+    SkillPills.tsx
+  data/
+    profile.ts          # Personal info and skill list
+    experience.ts       # Work history data
+    education.ts        # Education data
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Related
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Project Portfolio](https://eleonora-portfolio.netlify.app/) — client-style case studies and demos
+- [GitHub](https://github.com/Elli2022)
+- [LinkedIn](https://www.linkedin.com/in/eleonora-nocentini/)
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Private project. Content © Eleonora Nocentini Sköldebrink.
