@@ -14,10 +14,33 @@ export type Education = {
 export const educations: Education[] = [
   {
     id: 1,
+    school: "Tullverket (Swedish Customs)",
+    degree: "Basic Training — Customs Officer",
+    fieldOfStudy: "Customs inspection",
+    period: "Feb 2025 – May 2026",
+    location: "Sweden",
+    highlight: true,
+    description:
+      "Completed Tullverket basic training and qualified as a customs officer (tullinspektör) in May 2026.",
+    courses: [
+      "Customs legislation and procedures",
+      "Border and control operations",
+      "Risk assessment and inspection",
+      "Public-sector procedures",
+    ],
+    skills: [
+      "Regulatory Compliance",
+      "Structured Procedures",
+      "Risk Assessment",
+      "Public Sector",
+    ],
+  },
+  {
+    id: 2,
     school: "Grit Academy",
     degree: "Front End Web Developer",
     fieldOfStudy: "Web Development",
-    period: "Aug 2022 – Jun 2024",
+    period: "Aug 2022 – May 2024",
     location: "Malmö, Sweden",
     highlight: true,
     description:
@@ -45,7 +68,7 @@ export const educations: Education[] = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     school: "Komvux",
     degree: "Course Certificate — Java",
     fieldOfStudy: "Programming 1 in Java",
@@ -70,7 +93,7 @@ export const educations: Education[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     school: "Företagsuniversitetet",
     degree: "Cybersecurity, IT",
     fieldOfStudy: "Cybersecurity",
@@ -93,7 +116,7 @@ export const educations: Education[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     school: "Lund University",
     degree: "Extended Legal Introduction Course",
     fieldOfStudy: "Law",
@@ -105,7 +128,7 @@ export const educations: Education[] = [
     skills: ["Legal Analysis", "Understanding of Legal Frameworks"],
   },
   {
-    id: 5,
+    id: 6,
     school: "Lund University",
     degree: "B.Sc. Service Management, Organization & Leadership",
     fieldOfStudy: "Service Management",
@@ -128,7 +151,7 @@ export const educations: Education[] = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     school: "Malmö University",
     degree: "Civil Engineering — Project and Production Management",
     fieldOfStudy: "Construction and Civil Engineering",
@@ -148,7 +171,7 @@ export const educations: Education[] = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     school: "Grythyttans Bartenderskola",
     degree: "Bartender Certification",
     fieldOfStudy: "Bartending",
@@ -164,7 +187,7 @@ export const educations: Education[] = [
     skills: ["Mixology", "Customer Interaction", "Bar Etiquette"],
   },
   {
-    id: 8,
+    id: 9,
     school: "Malmö University",
     degree: "Foundation Year in Science and Technology",
     fieldOfStudy: "Science and Technology",
@@ -181,7 +204,7 @@ export const educations: Education[] = [
     skills: ["Matlab"],
   },
   {
-    id: 9,
+    id: 10,
     school: "ProCivitas",
     degree: "High School Diploma, Business Administration",
     fieldOfStudy: "Business Administration",

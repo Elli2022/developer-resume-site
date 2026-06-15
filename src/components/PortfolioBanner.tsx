@@ -12,7 +12,8 @@ export default function PortfolioBanner() {
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-white/85">
         This site is my CV — experience, education, and background. For case
         studies, live demos, and how I work with clients, visit my project
-        portfolio.
+        portfolio. Freelance capacity: up to 7 hours per week, scoped projects
+        only.
       </p>
       <a
         href={profile.portfolio}

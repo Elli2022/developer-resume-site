@@ -12,13 +12,48 @@ export type Experience = {
 export const experiences: Experience[] = [
   {
     id: 1,
+    role: "Freelance Web Developer",
+    company: "Self-employed",
+    period: "May 2024 – present",
+    location: "Malmö, Sweden (remote-friendly)",
+    highlight: true,
+    description:
+      "Scoped freelance work for SMBs and organisations — landing pages, company sites, and Next.js/React frontends. Capacity is limited to about 7 hours per week, so engagements are planned with clear milestones, written scope, and realistic timelines.",
+    skills: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "WordPress",
+      "Client Communication",
+      "Scoped Delivery",
+      "Netlify",
+    ],
+  },
+  {
+    id: 2,
+    role: "Customs Officer (Tullinspektör)",
+    company: "Tullverket (Swedish Customs)",
+    period: "May 2026 – present",
+    location: "Sweden",
+    description:
+      "Qualified customs officer after completing Tullverket basic training. Primary employment alongside a limited freelance web practice.",
+    skills: [
+      "Public Sector",
+      "Regulatory Compliance",
+      "Structured Procedures",
+      "Communication",
+    ],
+  },
+  {
+    id: 3,
     role: "Frontend Developer Internship",
     company: "Convertor",
     period: "Feb 2024 – Apr 2024",
     location: "Malmö, Sweden",
     highlight: true,
     description:
-      "Deepened frontend development skills through a second internship, broadening my toolkit to include CMS platforms such as Typo3 and Storyblok, and advanced frameworks like Next.js, Nest.js, and React. Embraced Agile methodologies while working with Tailwind, Git, and Node.js to deliver responsive, user-friendly websites.",
+      "Second internship deepening frontend skills with CMS platforms such as Typo3 and Storyblok, and frameworks including Next.js, Nest.js, and React. Worked with Tailwind, Git, and Node.js in Agile delivery.",
     skills: [
       "HTML",
       "CSS",
@@ -35,14 +70,14 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     role: "Frontend Developer Internship",
     company: "Capace Media Group AB",
     period: "Nov 2023 – Feb 2024",
     location: "Malmö, Sweden",
     highlight: true,
     description:
-      "Developed a website using JAMstack architecture with a headless CMS, GraphQL for data fetching, and a dynamic frontend built with React and Next.js. Focused on user experience, accessibility, and strategic design decisions alongside implementation.",
+      "Built a website using JAMstack architecture with a headless CMS, GraphQL, and a React/Next.js frontend — with focus on UX, accessibility, and maintainable structure.",
     skills: [
       "Git",
       "React",
@@ -58,13 +93,29 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 3,
-    role: "Security Officer",
-    company: "Kriminalvården",
-    period: "Apr 2021 – Oct 2022",
+    id: 5,
+    role: "Surveillance Operator (Bevakningsoperatör)",
+    company: "Kriminalvården — security detention centre",
+    period: "Jun 2021 – Aug 2022",
     location: "Malmö, Sweden",
     description:
-      "Handled security-related issues at a detention center, reporting to the Chief Security Inspector. Responsibilities included investigations, visitation decisions, security assessments, and close collaboration with operational staff.",
+      "Final role at the Swedish Prison and Probation Service before career retraining. Monitored the security detention centre via camera systems and managed facility alarms — requiring focus, calm under pressure, and clear communication during incidents.",
+    skills: [
+      "CCTV Monitoring",
+      "Alarm Management",
+      "Public Safety",
+      "Crisis Management",
+      "Stress Management",
+    ],
+  },
+  {
+    id: 6,
+    role: "Security Officer",
+    company: "Kriminalvården",
+    period: "Apr 2021 – Jun 2021",
+    location: "Malmö, Sweden",
+    description:
+      "Handled security-related matters at a detention centre, including investigations, visitation decisions, and security assessments in collaboration with operational staff.",
     skills: [
       "Public Safety",
       "Security Operations",
@@ -73,13 +124,13 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 4,
+    id: 7,
     role: "Incident Manager",
     company: "Kriminalvården",
-    period: "Apr 2021 – Oct 2022",
+    period: "Apr 2021 – Jun 2021",
     location: "Malmö, Sweden",
     description:
-      "Acted as the extension of the commanding officer during alerts, leading and distributing work at incident sites. Held command on scene and ensured efficient management of emergency situations.",
+      "Acted as extension of the commanding officer during alerts, leading work distribution at incident sites and maintaining command on scene.",
     skills: [
       "Crisis Management",
       "Leadership",
@@ -88,28 +139,28 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 5,
+    id: 8,
     role: "Camera Operator",
     company: "Kriminalvården",
-    period: "Apr 2020 – Jun 2021",
+    period: "Apr 2020 – Apr 2021",
     location: "Malmö, Sweden",
     description:
-      "Monitored the detention center through camera systems and managed alarms across the facility. Required focus, calm under pressure, and effective communication during triggered alerts.",
+      "Monitored detention facilities through surveillance systems and managed alarms using centralised communication tools.",
     skills: [
       "CCTV Monitoring",
       "Alarm Management",
-      "Crisis Management",
+      "Communication",
       "Stress Management",
     ],
   },
   {
-    id: 6,
+    id: 9,
     role: "Coordinator for Detention Plans",
     company: "Kriminalvården",
     period: "Jun 2018 – Apr 2020",
     location: "Malmö, Sweden",
     description:
-      "Worked with clients to develop individual detention plans, coordinating with stakeholders and participating in local, regional, and national forums on detention planning.",
+      "Developed individual detention plans with clients and coordinated interventions with stakeholders across local and regional forums.",
     skills: [
       "Problem Solving",
       "Client Relations",
@@ -118,23 +169,23 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 7,
+    id: 10,
     role: "Alternate Board Member",
     company: "Bostadsrättsföreningen Leka",
     period: "Jun 2020 – Dec 2020",
     location: "Malmö, Sweden",
     description:
-      "Stepped in at board meetings when regular members were unavailable, ensuring continuity in governance and decision-making processes.",
+      "Stepped in at board meetings when regular members were unavailable, supporting continuity in governance.",
     skills: ["Governance", "Decision Making", "Supportive Leadership"],
   },
   {
-    id: 8,
+    id: 11,
     role: "Insurance Advisor",
     company: "Trygg-Hansa",
     period: "Feb 2017 – Sep 2017",
     location: "Malmö, Sweden",
     description:
-      "Provided customer service, insurance advising, and sales to corporate clients. Focused on efficiency, reliability, and building positive client relationships in a goal-oriented team environment.",
+      "Customer service, insurance advising, and corporate sales in a goal-oriented team environment.",
     skills: [
       "Customer Service",
       "Sales",
@@ -143,13 +194,13 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 9,
+    id: 12,
     role: "Warehouse Employee",
     company: "Uniflex",
     period: "Apr 2014 – Jan 2015",
     location: "Lund, Sweden",
     description:
-      "Contracted for Frigoscandia in Staffanstorp, performing order picking, packing, and forklift driving in a fast-paced warehouse environment.",
+      "Order picking, packing, and forklift driving at Frigoscandia in a fast-paced warehouse environment.",
     skills: [
       "Warehouse Operations",
       "Forklift Operation",
@@ -158,13 +209,13 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 10,
+    id: 13,
     role: "Bartender",
     company: "Etagegruppen",
     period: "Aug 2009 – Aug 2010",
     location: "Malmö, Sweden",
     description:
-      "Provided beverage service in a fast-paced entertainment environment, including mixology, inventory management, and customer service under pressure.",
+      "Beverage service in a fast-paced entertainment environment, including mixology and inventory management.",
     skills: [
       "Customer Service",
       "Mixology",
@@ -173,13 +224,13 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 11,
+    id: 14,
     role: "Sales Associate",
     company: "Foot Locker EMEA",
     period: "Jan 2008 – Jun 2008",
     location: "Copenhagen, Denmark",
     description:
-      "Applied sales techniques to enhance customer engagement, maintained store conditions, and built positive relationships with customers and team members.",
+      "Sales, customer engagement, and store maintenance in a retail environment.",
     skills: [
       "Sales Techniques",
       "Customer Service",
@@ -188,13 +239,13 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    id: 12,
+    id: 15,
     role: "Waitstaff",
     company: "T. Tholstrup Catering ApS",
     period: "Apr 2007 – Dec 2007",
     location: "Copenhagen, Denmark",
     description:
-      "Served customers across restaurants in central Copenhagen during high school, developing upselling skills and teamwork in a demanding service environment.",
+      "Restaurant service in central Copenhagen during high school.",
     skills: ["Customer Service", "Upselling", "Teamwork", "Flexibility"],
   },
 ];

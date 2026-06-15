@@ -42,8 +42,8 @@ Send recruiters and clients to the **portfolio** first when they need proof of d
 ## Features
 
 - **Professional CV layout** — sticky sidebar with photo, skills, and contact; scrollable main content for experience and education
-- **12 work experiences** — from frontend internships to prior careers in security, leadership, and service
-- **9 education entries** — vocational web development training through university degrees
+- **15 work experiences** — freelance web development, customs officer, internships, and prior careers in security and service
+- **10 education entries** — Tullverket training, vocational web development, and university background
 - **Skill pills** — scannable tech stacks per role and program
 - **Highlighted entries** — recent developer internships and Grit Academy training stand out visually
 - **Responsive design** — optimized for desktop recruiters and mobile review

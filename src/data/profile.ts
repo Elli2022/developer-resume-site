@@ -1,11 +1,12 @@
 export const profile = {
   name: "Eleonora Nocentini Sköldebrink",
   title: "Freelance Frontend & Full-Stack Developer",
-  availability: "Available for freelance projects · Malmö & remote (Sweden)",
+  availability:
+    "Freelance: up to 7 hours/week · scoped projects · Malmö & remote (Sweden)",
   tagline:
-    "I help SMBs and organisations ship clear, maintainable websites and frontends — from scoped landing pages to Next.js/React builds with sensible handover.",
+    "I help SMBs and organisations ship clear, maintainable websites and frontends — scoped for realistic delivery alongside my role in the public sector.",
   story:
-    "After years in security and leadership at the Swedish Prison and Probation Service, I retrained in web development and found a natural fit in problem-solving, structure, and client-facing delivery. Today I freelance with a focus on modern JavaScript, React, and Next.js — and on communication that keeps projects predictable for non-technical stakeholders.",
+    "I worked in security roles at the Swedish Prison and Probation Service until August 2022, when I started vocational training in frontend web development at Grit Academy (graduated May 2024). After two agency internships and ongoing freelance project work, I completed Swedish Customs basic training (Feb 2025 – May 2026) and now work as a customs officer while taking on a limited number of freelance web engagements — with clear scope, timelines, and handover.",
   email: "eleonora.nocentini@gmail.com",
   phone: "+46 72 427 29 12",
   location: "Malmö, Sweden",
